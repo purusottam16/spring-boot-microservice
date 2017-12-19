@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: microservice-server
+    server:
+    port: 8071
+eureka:
+  client:
+    register-with-eureka: true
+    fatchRegistry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+      instance:
+      hostname: localhost
